@@ -7,9 +7,8 @@
     "default_popup": "index.html"
   },
   "web_accessible_resources": [
-    "worker.min.js",
-    "tessearct-core.js",
-    "tessearct-core.wasm",
+    "js/worker.min.js",
+    "js/tessearct-core.wasm.js",
     "traineddata/*.traineddata.gz"
   ]  
 }

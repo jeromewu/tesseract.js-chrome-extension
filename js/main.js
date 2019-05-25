@@ -5,7 +5,7 @@ const doOCR = () => {
   const { TesseractWorker } = Tesseract;
   const worker = new TesseractWorker({
     workerPath: chrome.runtime.getURL('js/worker.min.js'),
-    langPath: chrome.runtime.getURL('js/traineddata'),
+    langPath: chrome.runtime.getURL('traineddata'),
     corePath: chrome.runtime.getURL('js/tesseract-core.wasm.js'),
   });
 
