@@ -4,9 +4,9 @@ const doOCR = async () => {
 
   const { createWorker } = Tesseract;
   const worker = createWorker({
-    workerPath: chrome.runtime.getURL('js/worker.min.js'),
-    langPath: chrome.runtime.getURL('traineddata'),
-    corePath: chrome.runtime.getURL('js/tesseract-core.wasm.js'),
+    workerPath: 'https://unpkg.com/tesseract.js@v2.0.0/dist/worker.min.js',
+    langPath: 'traineddata',
+    corePath: 'https://unpkg.com/tesseract.js-core@v2.0.0/tesseract-core.wasm.js',
   });
   
   await worker.load();

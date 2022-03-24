@@ -7,8 +7,7 @@
     "default_popup": "index.html"
   },
   "web_accessible_resources": [
-    "js/worker.min.js",
-    "js/tessearct-core.wasm.js",
     "traineddata/*.traineddata.gz"
-  ]  
+  ],
+  "content_security_policy": "script-src 'self' https://unpkg.com/tesseract.js@v2.0.0/dist/worker.min.js https://unpkg.com/tesseract.js-core@v2.0.0/tesseract-core.wasm.js https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js 'wasm-eval'; object-src 'self'"
 }
